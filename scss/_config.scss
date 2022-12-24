@@ -1,0 +1,12 @@
+// This file stores all variables
+$primary-color: white;
+$secondary-color: #942bd5;
+
+// BACKGROUND IMAGE
+// $show-home-image: true;
+// $home-image: url();
+// $background-opacity: 0.9;
+
+@mixin easeOut {
+    transition: all 1s ease-out;
+}
