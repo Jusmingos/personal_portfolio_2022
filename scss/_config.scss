@@ -8,5 +8,5 @@ $secondary-color: #942bd5;
 // $background-opacity: 0.9;
 
 @mixin easeOut {
-    transition: all 1s ease-out;
+    transition: all 0.5s ease-out;
 }
