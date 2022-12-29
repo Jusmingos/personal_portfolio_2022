@@ -92,7 +92,7 @@
   box-sizing: border-box; }
 
 body {
-  background: white;
+  background: linear-gradient(to right, #F8C8DC, #E0B0FF);
   color: #4a4e53;
   height: 100%;
   margin: 0;
@@ -110,7 +110,7 @@ h1, h2, h3 {
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: #fafafa; }
+    background: #f2f2f2; }
 
 a {
   color: #4a4e53;
@@ -150,8 +150,8 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     border: #942bd5 3px solid; }
   .about-info .bio {
     grid-area: bio;
@@ -165,7 +165,16 @@ main {
   .about-info .job {
     background: #f7f7f7;
     padding: 0.5rem;
-    border-bottom: #942bd5 5px solid; }
+    border-bottom: #942bd5 5px solid;
+    margin-top: 30px; }
+  .about-info p {
+    font-size: 20px; }
+  .about-info .job-paragraph {
+    font-size: 18px; }
+  .about-info h3 {
+    font-size: 22px;
+    font-weight: bolder;
+    color: #942bd5; }
 
 .projects {
   display: grid;
@@ -190,8 +199,7 @@ main {
     font-size: 2rem;
     border: 3px #4a4e53 solid;
     padding: 1.5rem 2.5rem;
-    margin-bottom: 3rem;
-    transition: all 0.5s ease-out; }
+    margin-bottom: 3rem; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
       background: #942bd5;
@@ -226,7 +234,7 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
@@ -273,3 +281,55 @@ main {
       font-size: 5rem; }
   .projects {
     grid-template-columns: 1fr; } }
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-family: verdana;
+  font-size: 30px;
+  height: 15vh;
+  color: #4a4e53;
+  overflow: hidden; }
+
+.slider {
+  margin-left: 8px;
+  height: 50px;
+  overflow: hidden; }
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 15px;
+  text-align: center;
+  height: 50px;
+  margin-bottom: 50px; }
+
+.slide-anim {
+  animation: slide 7s linear infinite; }
+
+.slide1 {
+  background-color: #C1E1C1; }
+
+.slide2 {
+  background-color: #c5e8f5; }
+
+.slide3 {
+  background-color: #fefec6; }
+
+@keyframes slide {
+  0% {
+    transform: translateY(-300px); }
+  5% {
+    transform: translateY(-300px); }
+  33% {
+    transform: translateY(-200px); }
+  38% {
+    transform: translateY(-200px); }
+  66% {
+    transform: translateY(-100px); }
+  71% {
+    transform: translateY(-100px); }
+  100% {
+    transform: translateY(0px); } }
