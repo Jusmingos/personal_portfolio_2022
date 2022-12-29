@@ -6,7 +6,7 @@
 }
 
 body {
-    background: $primary-color;
+    background: linear-gradient(to right, #F8C8DC,#E0B0FF);
     color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
@@ -29,7 +29,8 @@ h1, h2, h3 {
     &.sm-heading {
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
-        background: rgba(darken($primary-color, 2), 1.5);
+        background: darken($primary-color, 5);
+        // background: rgba(darken($primary-color, 5), 1.5);
     }
 }
 
@@ -87,8 +88,8 @@ main {
         grid-area: bioimage;
         margin: auto;
         border-radius: 50%;
-        width: 350px;
-        height: 350px;
+        width: 250px;
+        height: 250px;
         border: $secondary-color 3px solid;
     }
     
@@ -113,6 +114,21 @@ main {
         background: darken($primary-color, 3);
         padding: 0.5rem;
         border-bottom: $secondary-color 5px solid;
+        margin-top: 30px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .job-paragraph {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 22px;
+        font-weight: bolder;
+        color: $secondary-color;
     }
 }
 
@@ -148,11 +164,10 @@ main {
         border: 3px #4a4e53 solid;
         padding: 1.5rem 2.5rem;
         margin-bottom: 3rem;
-        // margin-left: 1rem;
-        @include easeOut;
 
         &:hover {
             padding: 0.5rem 1.5rem;
+            
             background: $secondary-color;
             color: white;
             span {
@@ -246,7 +261,7 @@ main {
 }
 
 .slide3 {
-    background-color: #f3d1df;
+    background-color: #fefec6;
 }
 
 @keyframes slide {
