@@ -210,8 +210,6 @@ main {
     height: 60px;
 }
 
-@import 'mobile'; // put media query at the bottom so that it runs after css
-
 // SLIDING TEXT ANIMATION CSS: CITATION https://codepen.io/Zerchan/pen/aMjWQW
 // *{
 //     margin: 0;
@@ -273,3 +271,5 @@ main {
 71% { transform: translateY(-100px); }
 100% { transform: translateY(0px); }
 }
+
+@import 'mobile'; // put media query at the bottom so that it runs after css
