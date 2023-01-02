@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>U.S. Visa Redesign</title>
+
+  <!-- Favicons -->
+  <!-- CITATION: Taken from https://play.google.com/store/apps/details?id=com.alfianlosari.hackernews&hl=en&gl=US -->
+  <link href="img/travel.png" rel="icon">
+
+  <!-- Font -->
+  <!-- Sofia-Pro Adobe Font -->
+  <link rel="stylesheet" href="https://use.typekit.net/blg0zww.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Font Style Sheet -->
+    <link href="https://fonts.cdnfonts.com/css/varela-round-2" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/almost-like-the-blues" rel="stylesheet">
+
+    <!-- Figtree Font CDN -->
+    <link href='https://fonts.googleapis.com/css?family=Figtree' rel='stylesheet'>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Index CSS File -->
+  <link href="css/visa.css" rel="stylesheet">
+
+  <!-- From https://getbootstrap.com/docs/5.0/examples/#custom-components Jumbotron Example -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- CITATION: https://getbootstrap.com/docs/5.0/components/navbar/ -->
+  <nav class="navbar navbar-expand-lg navbar-light text-white sticky-top custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white cute-header" href="#">U.S. Visa Redesign</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link cute-header" style="color: white" aria-current="page" href="#introduction">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cute-header" style="color: white" href="#issues">Issues</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cute-header" style="color: white" href="#lofi">Lofi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cute-header" style="color: white" href="#anno">Lofi Annotations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cute-header" style="color: white" href="#styleguide">Style Guide</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cute-header" style="color: white" href="#hifi">Hifi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cute-header" style="color: white" href="#redesign">Redesign</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cute-header" style="color: white" href="#conclusion">Conclusion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+   <!-- CITATION: Header from https://codepen.io/goodkatz/pen/LYPGxQz?editors=1100 -->
+   <div class="header mb-5">
+
+    <!--Content before waves-->
+    <div class="inner-header flex">
+        <div class="row">
+            <div class="col md-6">
+                <h1 style="color:#4a4e53">Let's redesign the U.S. visa application website!</h1>
+            </div>
+            <div class="col-md-6">
+              <!-- SNOW GLOBE CITATION: https://codepen.io/Mamboleoo/pen/qOzNow -->
+              <div id="globe">
+                  <canvas id="town"></canvas>
+                  <canvas id="snowFlakes"></canvas>
+              </div>
+          </div>
+        </div>
+    </div>
+     <!-- CITATION: button component FlexStart template https://bootstrapmade.com/demo/FlexStart/ -->
+     <div class="flex text-center text-lg-start mb-3">
+      <a href="#introduction" class="start scrollto d-inline-flex align-items-center justify-content-center align-self-center mb-5">
+        <span>Let's Do It!</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+    </div>
+
+
+    <div class="container py-4">
+  
+      <div class="row">
+        <div class="col-md-12">
+          <h3 id="introduction" class="pb-4 mb-4 border-bottom cute-header">
+            Introduction
+          </h3>
+          <p>
+              Visas are very important for internationals who study and work here in the U.S.&nbsp;For many International students and workers, visa application is often a stressful process.
+              &nbsp;As an International student,&nbsp;I have applied to U.S. visas several times through <a href="https://www.ustraveldocs.com/cn/">this website</a> and encountered many difficulties. I redesigned this website with the goal of making it more efficient and easier to use.
+  
+          <h3 id="issues" class="pb-4 mb-4 mt-4 border-bottom cute-header">
+              Usability and Accessibility Issues
+          </h3>
+  
+          <div class="accordion" id="lofi">
+              <!-- item 1 -->
+  
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      Unclear Navigation
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#lofi">
+                    <div class="accordion-body">
+                      When the user first accesses the site, they see big blocks of irrelevant information with red background color.&nbsp;The important information and functionality, which are the introduction of the website’s purpose and the create account/log in buttons, are hidden toward the bottom of the page in green, a less obvious color.&nbsp;The user’s attention would be diverted by the irrelevant blocks of information and would have trouble finding where to start. This would decrease the efficiency, learnability and memorability of the website, since new users would have a harder time learning the workflow and returning users would be distracted and forget what they were supposed to do.
+                    </div>
+                  </div>
+              </div>
+  
+              <!-- item 2 -->
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Misguiding elements / visual feedback
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#lofi">
+                    <div class="accordion-body">
+                      <ul>
+                          <li>
+                            The information links have a horizontal triangle next to them, which seem to indicate that they're expandable. However, these elements are just links. If the user clicks on the triangle, the webpage has no response.
+                          </li>
+                          <li>
+                            The search bar at the top right seems like a bar to search for content on the current webpage, but instead is a form that leads the user to Microsoft Bing.
+                          </li>
+                          <li>
+                            The red expandable rows at the top do not clearly indicate that they fold and unfold on click. Without actually clicking on these elements, it is hard for the users to understand what they do.
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+  
+              <!-- item 3 -->
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Tiny text and functional elements
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#lofi">
+                    <div class="accordion-body">
+                      All the texts on the website are tiny and crammed together.&nbsp;These texts increase the number of incorrect inputs and the amount of time it takes to complete typical tasks for the users.
+                    </div>
+                  </div>
+              </div>
+  
+              <!-- item 4 -->
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Low contrast text and functional elements
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#lofi">
+                    <div class="accordion-body">
+                      There are many examples of low contrast between the text color and the background color. Some examples include white words on red background and white words on light green background. The low contrast decreases readability and increase the amount of time it takes to complete typical tasks.
+                    </div>
+                  </div>
+                </div>
+  
+              <!-- item 5 -->
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      Visual Clutter
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#lofi">
+                    <div class="accordion-body">
+                      There are many big blocks of texts with no clear indication of priority, and no key information is highlighted. This design overloads the user with too much information and makes it harder for them to identify and complete the important tasks.
+                    </div>
+                  </div>
+                </div>
+  
+              <!-- item 6 -->
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      Bad error handling
+                    </button>
+                  </h2>
+                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#lofi">
+                    <div class="accordion-body">
+                      The search bar at the top right has bad error handling. When the user uses it to search something, they see an error message: “This form is not secure. Autofill has been turned off.” This browser error should be avoided by appropriate error handling on the website itself by implementing a secure version of the search bar. An error message like this would cause confusion and anxiety for the users and should be avoided.
+                    </div>
+                  </div>
+              </div>
+  
+  
+              <!-- item 7 -->
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                      Accessibility problems and findings
+                    </button>
+                  </h2>
+                  <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                    data-bs-parent="#lofi">
+                    <div class="accordion-body">
+                      <ul>
+                          <li>
+                              According to WAVE, the page has many contrast errors, where the contrast between text and background colors is very low. I do agree with these errors, because I also have trouble reading the large blocks of text.
+                          </li>
+                          <li>
+                              There is an error about missing form label on the search bar. I agree with this error and think that it shows how misguiding the search bar is. It is presented as a search bar with the button “search site” but is actually a form.
+                          </li>
+                          <li>
+                              There are some warnings for very small text, which I also think is a major usability problem of the website. The low contrast and the small text make the readability of the site very low and would decrease the user’s efficiency when navigating the site.
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+          </div>
+  
+              <h3 id="lofi" class="pb-4 mb-4 mt-3 border-bottom cute-header">
+                  Lo-Fi Prototypes
+              </h3>
+              <p><b>Click on any sketch to enlarge it and view it in more detail!</b></p>
+  
+              <!-- Modal Image Gallary Citation: https://trvswgnr.github.io/bs5-lightbox/ -->
+              <div class="row mt-3">
+                  <a href="img/Desktop.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
+                    <img src="img/Desktop.png" class="img-fluid site" style="height: 750px;">
+                  </a>
+                  <a href="img/Tablet.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
+                    <img src="img/Tablet.png" class="img-fluid site" style="height: 750px;">
+                  </a>
+                  <a href="img/Mobile.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-4">
+                    <img src="img/Mobile.png" class="img-fluid site" style="height: 750px;">
+                  </a>
+              </div>
+  
+              <h4 id="anno" class="pb-4 mb-4 mt-3 border-bottom">
+                  Annotations for Low-Fi Prototypes
+              </h4>
+  
+              <div class="accordion" id="lofi-annotations">
+                  <!-- item 1 -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="annotations-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#annotations-collapseOne" aria-expanded="false" aria-controls="annotations-collapseOne">
+                          1:&nbsp;Unclear navigation
+                        </button>
+                      </h2>
+                      <div id="annotations-collapseOne" class="accordion-collapse collapse" aria-labelledby="annotations-headingOne"
+                        data-bs-parent="#lofi-annotations">
+                        <div class="accordion-body">
+                          The buttons for creating an account and logging in and the welcome message are now at the top of the page. The two buttons are also bigger than the original ones. This allows the users to notice the buttons and the message and start the visa application process as soon as they go on the site.
+                        </div>
+                      </div>
+                  </div>
+  
+                  <!-- item 2 -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="annotations-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#annotations-collapseTwo" aria-expanded="false" aria-controls="annotations-collapseTwo">
+                          2:&nbsp;Misguiding element - search bar
+                        </button>
+                      </h2>
+                      <div id="annotations-collapseTwo" class="accordion-collapse collapse" aria-labelledby="annotations-headingTwo"
+                        data-bs-parent="#lofi-annotations">
+                        <div class="accordion-body">
+                          On the original website, the search bar at the top right seems like a bar to search for content on the current webpage, but instead is a form that leads the user to Microsoft Bing. For the redesign, I added the message “Search for information related to this site on Microsoft Bing” to make the purpose of the search bar clearer.
+                          For the mobile version, there is no search button next to the search bar. Instead, when the user clicks on the search box, the keyboard pops up. After they finish typing their input, they can use the “enter” button on the keyboard as the search button.
+                        </div>
+                      </div>
+                  </div>
+  
+                  <!-- item 3 -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="annotations-heading3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#annotations-collapse3" aria-expanded="false" aria-controls="annotations-collapse3">
+                          3:&nbsp;Bad error handling
+                        </button>
+                      </h2>
+                      <div id="annotations-collapse3" class="accordion-collapse collapse" aria-labelledby="annotations-heading3"
+                        data-bs-parent="#lofi-annotations">
+                        <div class="accordion-body">
+                          It’s hard to demonstrate how to address the bad error handling with the search bar in the prototypes. If I were to actually implement the redesign in code, I would implement the search bar such that it redirects to Bing in a more secure way instead of triggering a browser-generated error message.
+                        </div>
+                      </div>
+                  </div>
+  
+                  <!-- item 4 -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="annotations-heading4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#annotations-collapse4" aria-expanded="false" aria-controls="annotations-collapse4">
+                          4:&nbsp;Tiny text
+                        </button>
+                      </h2>
+                      <div id="annotations-collapse4" class="accordion-collapse collapse" aria-labelledby="annotations-heading4"
+                        data-bs-parent="#lofi-annotations">
+                        <div class="accordion-body">
+                          The text sizes are bigger in the redesign and organized in clear sections instead of being crammed together.
+                        </div>
+                      </div>
+                  </div>
+  
+                  <!-- item 5 -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="annotations-heading5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#annotations-collapse5" aria-expanded="false" aria-controls="annotations-collapse5">
+                          5:&nbsp;Visual Clutter
+                        </button>
+                      </h2>
+                      <div id="annotations-collapse5" class="accordion-collapse collapse" aria-labelledby="annotations-heading5"
+                        data-bs-parent="#lofi-annotations">
+                        <div class="accordion-body">
+                          All the information on the redesigned site is organized in sections with clear headings and rectangle containers. For the sections that have many links, such as “Important Links” and “Social Media Page”, I added bullet points for each link to make the list appear more organized. This allows the users to identify the purpose of each section and have an easier time locating information useful to them.
+                        </div>
+                      </div>
+                  </div>
+  
+                  <!-- item 6 -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="annotations-heading6">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#annotations-collapse6" aria-expanded="false" aria-controls="annotations-collapse6">
+                          6:&nbsp;Misguiding element – expandable rows
+                        </button>
+                      </h2>
+                      <div id="annotations-collapse6" class="accordion-collapse collapse" aria-labelledby="annotations-heading6"
+                        data-bs-parent="#lofi-annotations">
+                        <div class="accordion-body">
+                          In the redesign, the expandable rows have arrows next to them indicating if they’re folded or unfolded. When a row expands, it is highlighted in green. These visual cues help the users understand that each row folds/unfolds on click.
+                        </div>
+                      </div>
+                  </div>
+  
+                  <!-- item 7 -->
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="annotations-heading7">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#annotations-collapse7" aria-expanded="false" aria-controls="annotations-collapse7">
+                          7:&nbsp;Misguiding element - information links
+                        </button>
+                      </h2>
+                      <div id="annotations-collapse7" class="accordion-collapse collapse" aria-labelledby="annotations-heading7"
+                        data-bs-parent="#lofi-annotations">
+                        <div class="accordion-body">
+                          In the new design, all the links are underlined (and will be blue in the hi-fi prototypes) to indicate that they are links. There are no more arrows next to the links.
+                        </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <h3 id="styleguide" class="pb-4 mb-4 mt-3 border-bottom cute-header">
+                  Visual Style Guide
+              </h3>
+  
+              <div class="my-custom-scrollbar-style-guide my-custom-scrollbar-primary">
+                  <img alt="style-guide" src="img/styleguide.png" />
+              </div>
+  
+              <h3 id="hifi" class="pb-4 mb-4 mt-4 border-bottom cute-header">
+                  High-Fi Prototype
+              </h3>
+  
+              <div class="row">
+                  <div class="col-md-6">
+                      <div class="my-custom-scrollbar my-custom-scrollbar-primary">
+                          <img alt="figma-desktop" src="img/figma_desktop.png" />
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="accordion" id="highfi-annotations-desktop">
+                          <!-- item one -->
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="high-fi-annotations-heading-1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#high-fi-annotations-collapse1" aria-expanded="true" aria-controls="high-fi-annotations-collapse1">
+                                  1.&nbsp;Horizontal navigation bar at the top of the screen
+                                </button>
+                              </h2>
+                              <div id="high-fi-annotations-collapse1" class="accordion-collapse collapse show" aria-labelledby="high-fi-annotations-heading1"
+                                data-bs-parent="#highfi-annotations-desktop">
+                                <div class="accordion-body">
+                                  The current page we’re on is bolded. When the user hovers on the other elements (Login, Contact Us, FAQ), the text will be highlighted in grey. Clicking on each element leads the user to that page.
+                                </div>
+                              </div>
+                          </div>
+  
+                          <!-- item 2 -->
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="high-fi-annotations-heading-2">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#high-fi-annotations-collapse2" aria-expanded="true" aria-controls="high-fi-annotations-collapse2">
+                                  2:&nbsp;Button
+                                </button>
+                              </h2>
+                              <div id="high-fi-annotations-collapse2" class="accordion-collapse collapse show" aria-labelledby="high-fi-annotations-heading2"
+                                data-bs-parent="#highfi-annotations-desktop">
+                                <div class="accordion-body">
+                                  This button is normally blue; on hover, it turns purple.
+                                </div>
+                              </div>
+                          </div>
+  
+                          <!-- item 3 -->
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="high-fi-annotations-heading-3">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#high-fi-annotations-collapse3" aria-expanded="true" aria-controls="high-fi-annotations-collapse3">
+                                  3:&nbsp;Search bar
+                                </button>
+                              </h2>
+                              <div id="high-fi-annotations-collapse3" class="accordion-collapse collapse show" aria-labelledby="high-fi-annotations-heading3"
+                                data-bs-parent="#highfi-annotations-desktop">
+                                <div class="accordion-body">
+                                  The search bar has four different states: unclicked, clicked, with input text and highlighted input text
+                                </div>
+                              </div>
+                          </div>
+  
+                          <!-- item 4 -->
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="high-fi-annotations-heading-4">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#high-fi-annotations-collapse4" aria-expanded="true" aria-controls="high-fi-annotations-collapse4">
+                                  4:&nbsp;Search button
+                                </button>
+                              </h2>
+                              <div id="high-fi-annotations-collapse4" class="accordion-collapse collapse show" aria-labelledby="high-fi-annotations-heading4"
+                                data-bs-parent="#highfi-annotations-desktop">
+                                <div class="accordion-body">
+                                  On click, this button opens a new page in Microsoft Bing with the search results. All buttons with the airplane icon lead the users to another page.
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="row mt-3">
+                  <div class="col-md-6">
+                      <div class="my-custom-scrollbar my-custom-scrollbar-primary">
+                          <img alt="figma-tablet" src="img/figma_tablet.png" />
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="accordion" id="highfi-annotations-tablet">
+                          <!-- item 5 -->
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="high-fi-annotations-heading-5">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#high-fi-annotations-collapse5" aria-expanded="true" aria-controls="high-fi-annotations-collapse5">
+                                  5:&nbsp;Accordion
+                                </button>
+                              </h2>
+                              <div id="high-fi-annotations-collapse5" class="accordion-collapse collapse show" aria-labelledby="high-fi-annotations-heading5"
+                                data-bs-parent="#highfi-annotations-tablet">
+                                <div class="accordion-body">
+                                  Each row in the accordion folds and unfolds on click. When a row in the accordion is selected, it is underlined.
+                                </div>
+                              </div>
+                          </div>
+  
+                          <!-- item 6 -->
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="high-fi-annotations-heading-6">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#high-fi-annotations-collapse6" aria-expanded="true" aria-controls="high-fi-annotations-collapse6">
+                                  6:&nbsp;Links
+                                </button>
+                              </h2>
+                              <div id="high-fi-annotations-collapse6" class="accordion-collapse collapse show" aria-labelledby="high-fi-annotations-heading6"
+                                data-bs-parent="#highfi-annotations-tablet">
+                                <div class="accordion-body">
+                                  The links are blue underlined and change to a darker blue upon hover.
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="row mt-3">
+                  <div class="col-md-6">
+                      <div class="my-custom-scrollbar my-custom-scrollbar-primary">
+                          <img alt="figma-mobile" src="img/figma_mobile.png" />
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                      <div class="accordion" id="highfi-annotations-mobile">
+                          <!-- item 7 -->
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="high-fi-annotations-heading-7">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#high-fi-annotations-collapse7" aria-expanded="true" aria-controls="high-fi-annotations-collapse7">
+                                  7:&nbsp;Scrollbar
+                                </button>
+                              </h2>
+                              <div id="high-fi-annotations-collapse7" class="accordion-collapse collapse show" aria-labelledby="high-fi-annotations-heading7"
+                                data-bs-parent="#highfi-annotations-mobile">
+                                <div class="accordion-body">
+                                  The scrollbar allows the user to scroll through and view all the links in the flex container. The user can scroll upward and downward. This is to make sure that the users don’t get overwhelmed by a lot of links at once and instead can choose how much they want to see.
+                                </div>
+                              </div>
+                          </div>
+  
+                          <!-- item 8 -->
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="high-fi-annotations-heading-8">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#high-fi-annotations-collapse8" aria-expanded="true" aria-controls="high-fi-annotations-collapse8">
+                                  8:&nbsp;Large containers
+                                </button>
+                              </h2>
+                              <div id="high-fi-annotations-collapse8" class="accordion-collapse collapse show" aria-labelledby="high-fi-annotations-heading8"
+                                data-bs-parent="#highfi-annotations-mobile">
+                                <div class="accordion-body">
+                                  For all the large containers, I will be using bootstrap flex containers and cards. This is because the website I chose contains many sections of information, and flex containers organize them clearly in different rows and columns. The responsiveness for different screen sizes can also be easily achieved by adjusting the sizes of these containers and changing the number of containers on each row.
+                                </div>
+                              </div>
+                          </div>
+  
+                          <!-- item 9 -->
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="high-fi-annotations-heading-6">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#high-fi-annotations-collapse9" aria-expanded="true" aria-controls="high-fi-annotations-collapse9">
+                                  9:&nbsp;Fonts and Spacing
+                                </button>
+                              </h2>
+                              <div id="high-fi-annotations-collapse9" class="accordion-collapse collapse show" aria-labelledby="high-fi-annotations-heading9"
+                                data-bs-parent="#highfi-annotations-mobile">
+                                <div class="accordion-body">
+                                  As we go from Desktop to Tablet to Mobile, the font size decreases and the spacing increases slightly to account for the different screen sizes. The relative difference in font (e.g, title vs. body) remains the same.
+                                </div>
+                              </div>
+                          </div>
+  
+                          <!-- item 10 -->
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="high-fi-annotations-heading-10">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#high-fi-annotations-collapse10" aria-expanded="true" aria-controls="high-fi-annotations-collapse10">
+                                  10:&nbsp;Responsiveness
+                                </button>
+                              </h2>
+                              <div id="high-fi-annotations-collapse10" class="accordion-collapse collapse show" aria-labelledby="high-fi-annotations-heading10"
+                                data-bs-parent="#highfi-annotations-mobile">
+                                <div class="accordion-body">
+                                  To make sure that the website is responsive to handle different screen sizes, I use different number of cards (Bootstrap component) on each row for each screen size. Desktop View has 2 or 3 cards on each row; Tablet view has 2 cards; Mobile view has 1 card.
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <h3 id="redesign" class="pb-4 mb-4 border-bottom cute-header">
+                  Redesigned Website
+              </h3>
+              <div class="container-fluid mt-4">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="card">
+                              <img class="card-img-top" src="img/original_website.png" alt="Card image cap" style="width: 100%; height: 400px">
+                              <div class="card-body">
+                                <h5 class="card-title text-center">
+                                  <a href="https://www.ustraveldocs.com/cn/">Original Website</a>
+                                </h5>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="card">
+                              <img class="card-img-top" src="img/responsive_redesign.png" alt="Card image cap" style="width: 100%; height: 400px">
+                              <div class="card-body">
+                                <h5 class="card-title text-center">
+                                  <a href="https://hungryquokka101.github.io/responsive-redesign/">Responsive Redesign</a>
+                                </h5>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <h3 id="conclusion" class="pb-4 mb-4 mt-3 border-bottom cute-header">
+                  Conclusion
+              </h3>
+              <p class="mb-3">
+                  Throughout the process of redesigning this website, I gained a better understanding of the common usability issues and how to address them effectively with visual design principles.
+              In my responsive redesign, there are definitely areas I could improve upon in the future, such as making certain components more responsive and the website more visually engaging.
+              </p>
+  
+                          
+          </div>
+  
+  
+          
+        </div>
+      </div>
+
+    <a id="float" href="work.html">
+        <i class="fa-solid fa-arrow-left" style="color: white"></i>
+        Back to Portfolio
+    </a>
+
+    <footer class="footer footer-bg custom-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 d-flex justify-content-end align-items-start flex-column footer-mobile">
+              <p>U.S. Visa Design</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+      <!-- CITATION: Tooltip Code https://getbootstrap.com/docs/5.0/components/tooltips/ -->
+      <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+      </script>
+
+      <!-- Lightbox CDN for Modal Image Gallery -->
+      <!-- CITATION: https://trvswgnr.github.io/bs5-lightbox/ -->
+      <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.2/dist/index.bundle.min.js"></script>
+
+      <!-- import index.js in this directory -->
+      <script src="js/visa.js"></script>
+</body>
+
+</html>

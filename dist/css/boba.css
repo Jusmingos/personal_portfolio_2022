@@ -118,8 +118,10 @@ button {
 
 /* on hover make expand */
 .site:hover {
-    transform: scale(1.05);
-    transition: 0.5s;
+    -webkit-transform: rotateZ(-2deg);
+    -ms-transform: rotateZ(-2deg);
+    transform: rotateZ(-2deg);
+    transition: 1s ease;
 }
 
 /* make Y Combinator orange, bold, and underline */

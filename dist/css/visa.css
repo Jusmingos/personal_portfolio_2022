@@ -3,12 +3,12 @@
 
 * {
     color: #4a4e53;
-  }
+}
+
 body {
     font-family: "Figtree", sans-serif;
     letter-spacing: 0.5px;
     line-height: 1.5;
-    /* background-color: #e7e1fb; */
 }
 
 h3 {
@@ -85,8 +85,6 @@ h3 {
 }
 
 .custom-footer {
-  /* background-color: #e7e1fb;
-  color: #e7e1fb; */
   padding: 2rem 0;
 }
 
@@ -107,7 +105,7 @@ button {
 }
 
 .dark-bg {
-    /* background-color: #f6f9fe; */
+    background-color: #f6f9fe;
 }
 
 .website-container {
