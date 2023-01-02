@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Personas and Storyboards</title>
+
+  <!-- Favicons -->
+  <!-- CITATION: Taken from https://play.google.com/store/apps/details?id=com.alfianlosari.hackernews&hl=en&gl=US -->
+  <link href="img/bubble-tea.png" rel="icon">
+
+  <!-- Font -->
+  <!-- Sofia-Pro Adobe Font -->
+  <link rel="stylesheet" href="https://use.typekit.net/blg0zww.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Figtree Font CDN -->
+    <link href='https://fonts.googleapis.com/css?family=Figtree' rel='stylesheet'>
+
+    <!-- Font Style Sheet -->
+    <link href="https://fonts.cdnfonts.com/css/varela-round-2" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/almost-like-the-blues" rel="stylesheet">
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Index CSS File -->
+  <link href="css/boba.css" rel="stylesheet">
+
+  <!-- From https://getbootstrap.com/docs/5.0/examples/#custom-components Jumbotron Example -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  
+  <!-- CITATION: https://getbootstrap.com/docs/5.0/components/navbar/ -->
+  <nav class="navbar navbar-expand-lg navbar-light text-white sticky-top custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white cute-header" href="#">Personas and Storyboards</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link cute-header" style="color: white" aria-current="page" href="#introduction">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cute-header" style="color: white" href="#user-observations">User Observations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cute-header" style="color: white" href="#empathy-maps">Empathy Maps</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cute-header" style="color: white" href="#storyboards">Storyboards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cute-header" style="color: white" href="#conclusion">Conclusion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+   <!-- CITATION: Header from https://codepen.io/goodkatz/pen/LYPGxQz?editors=1100 -->
+   <div class="header mb-5">
+
+    <!--Content before waves-->
+    <div class="inner-header flex">
+        <div class="row">
+            <div class="container-fluid py-5 col-md-6" style="padding-left: 50px">
+                <h3 style="color: black">Let's begin a user research journey for Tiger Sugar's self-checkout machine!</h3>
+                <br>
+                <p style="color: black">
+                    <!-- CITATION: Definitions of storyboards and persona from the following article: https://uxplanet.org/user-personas-scenarios-user-stories-and-storyboards-whats-the-difference-cf00315f0799 -->
+                    User <strong>Personas</strong> and <strong>Storyboards</strong> are two important components of user research:
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mx-auto">
+                                <div class="card-body">
+                                <p class="card-text" style="color: black">A user <strong>persona</strong> is an archetype or character that represents a potential user of a website or app.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mx-auto definition">
+                                <div class="card-body">
+                                <p class="card-text" style="color: black">A <strong>storyboard</strong> is a visual representation of how the user would react with a site or app.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4" style="color: black">
+                        We're going to conduct user research by creating two user personas and a story board for the Tiger Sugar self-checkout interface.
+                    </div>
+                </p>
+              <!-- <h1 class="display-5 fw-bold" style="color: white">Hi there!</h1>
+              <p class="col-md-8 fs-4" style="color: white">I’m a designer & story-teller who enjoys sweet and adorable things in life :)</p> -->
+            </div>
+            <!-- CITATION: Boba Citation https://codepen.io/Itchiii/pen/Ldaoaz -->
+            
+            <!-- Boba HTML -->
+            <div class="col-md-6">
+            <svg xmlns="http://www.w3.org/2000/svg" id="bubbletea" width="250px" height="250px" viewBox="0 0 346.68 473.2">
+                <defs />
+                <g id="tea" stroke="#8574a8" stroke-miterlimit="10" stroke-width="10">
+                  <path fill="#a89bc4" d="M215.61 415.61c-13.45 21.59-38 47.78-45.61 50-20.94 6.15-107.6-8.78-137-46.11-11.27-14.3-24.81-31.32-27.23-48.54-3.89-27.74 8.33-54.38 9.8-59 17.16-53.69 81.06-197.19 94.31-196.67 56.33 2.23 126.71 34.48 177.65 58.63 9.25 4.39 23.16 9.23 22.63 19.92-2.63 52.72-65.04 174.41-94.55 221.77z" />
+                  <path fill="#8574a8" d="M42.34 252.37c13.31-8.4 31.25-14.24 44.16-5.25 16.05 11.18 16.84 40.35 36.06 44 10.64 2 20.53-5.74 31.18-7.75 18.39-3.47 37.45 14.43 35.16 33-.46 3.73-1.62 7.54-.61 11.16 2 7.21 11.64 9.54 18.73 7.13s12.63-7.9 19-11.83 15-6.16 21.09-1.79c6.88 4.93 6.63 15.29 4.14 23.38-3.36 10.87-6 20.3-12.14 29.88-14 22-19.32 39.92-35.14 60.62-7.8 10.2-21.38 29.53-34 32-7.61 1.51-23.94 1.75-31.5 0-15.12-3.5-32.8-10.79-47.92-14.28-19.18-4.44-36.87-12.44-50.8-26.35-6.41-6.4-26.06-39.3-30.63-47.12-12.88-21.97 24-120.97 33.22-126.8z" opacity=".22" />
+                </g>
+                <g id="cheeks" fill="#de9bb5" stroke="#de9bb5" stroke-miterlimit="10" stroke-width="10">
+                  <ellipse cx="261.24" cy="323.62" rx="4" ry="14.5" transform="rotate(-68.17 110.06 395.85)" />
+                  <ellipse cx="393.21" cy="376.5" rx="4.5" ry="15.5" transform="rotate(-71.17 245.891 442.235)" />
+                </g>
+                <path id="mouth" fill="none" stroke="#6a5f71" stroke-miterlimit="10" stroke-width="10" d="M181.82 256.64c-8.55 5.26-19.73 5.71-28.93 1.68a36.68 36.68 0 01-19.54-21.78" />
+                <g id="boba" fill="#6a5f71" stroke="#6a5f71" stroke-miterlimit="10" stroke-width="10">
+                  <circle id="boba-six" cx="47.65" cy="303.03" r="8.95" />
+                  <circle id="boba-five" cx="77.84" cy="407.44" r="16" />
+                  <circle id="boba-four" cx="154.25" cy="415.61" r="15.75" />
+                  <ellipse id="boba-three" cx="115.13" cy="434.94" rx="11.9" ry="11.5" />
+                  <ellipse id="boba-two" cx="52.35" cy="359.82" rx="17" ry="14.5" />
+                  <!--     <path id="boba-one" d="M181.92 469.3c7.63 1.28 12.49 10.21 10.85 19.95S174.3 468 181.92 469.3z" transform="translate(-162 -94.94)" /> -->
+                </g>
+                <g id="eyes" stroke-miterlimit="10" stroke-width="10">
+                  <circle cx="133.35" cy="193.96" r="23.5" fill="#6a5f71" stroke="#6a5f71" />
+                  <circle cx="215.61" cy="228.68" r="23.5" fill="#6a5f71" stroke="#6a5f71" />
+                  <ellipse cx="224.23" cy="240.42" fill="#fff" stroke="#fff" rx="1.62" ry="5.61" />
+                  <ellipse cx="142.94" cy="205.18" fill="#fff" stroke="#fff" rx="1.62" ry="5.61" />
+                </g>
+                <g id="cap" stroke-miterlimit="10" stroke-width="10">
+                  <path fill="#e5dbdf" stroke="#e5dbdf" d="M98.37 79.4c3.74-1.79 20.34-7.92 38.72-10 21.7-2.49 46.27 1.75 56.81 3.31 54.13 8 109.9 38.76 128.83 58.08 4 3.58 5.32 8.7 7.93 13.16 2.41 4.13 11.59 12 11 16.92-1.49 12.16-18.42 29.51-21.17 25.22 0 0-149.18-64-225.64-69.65-9.28-.72-1.23-34.77 3.52-37.04z" />
+                  <path fill="#e3e3e3" stroke="#e3e3e3" d="M339.21 148.15c.55-16 .22-32.88-8.21-46.42-6-9.67-15.52-16.54-24.78-23.16-12.29-8.78-24.68-17.62-38.36-24-45.7-21.37-102-12.26-144.83 16.68 71.57 26.4 146.57 43.9 216.18 76.9z" />
+                  <path fill="#de9bb5" stroke="#de9bb5" d="M201 36.34c-.52-5.11-.88-10.32-2.77-15.1-3.44-8.67-12-14.94-21.28-16.05a29.75 29.75 0 00-25.12 9.7c-9 9.93-10.62 24.42-7.31 39.4a353 353 0 0137.56-9.93c6.48-1.34 13.24-2.6 18.65-6.44.37-.72 1.27-1.07.27-1.58z" />
+                  <ellipse cx="464.34" cy="260.32" fill="#fff" stroke="#f7f7f7" rx="3.77" ry="25" transform="rotate(-68.97 314.274 330.766)" />
+                  <circle cx="319.54" cy="133.41" r="5.75" fill="#fff" stroke="#fff" />
+                </g>
+            </svg>
+            </div>
+    
+          </div>
+    
+   
+    </div>
+     <!-- CITATION: button component FlexStart template https://bootstrapmade.com/demo/FlexStart/ -->
+     <div class="flex text-center text-lg-start mb-3">
+      <a href="#introduction" class="start scrollto d-inline-flex align-items-center justify-content-center align-self-center mb-5">
+        <span>Boba time!</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+    </div>
+
+
+  <div class="container py-4">
+
+
+    <!--Waves Container-->
+    <!-- <div>
+      <svg id="introduction" class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+      <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+      </svg>
+    </div> -->
+    <!--Waves end-->
+    
+
+  <!--Header ends-->
+
+<!--     
+    <div class="p-5 mb-4 jumbo-bg rounded-3">
+      <div class="row">
+        <div class="container-fluid py-5 col-md-6">
+            <h3 style="color: white">Let's begin a user research journey for Tiger Sugar's self-checkout machine!</h3>
+            <br>
+            <p style="color: white"> -->
+                <!-- CITATION: Definitions of storyboards and persona from the following article: https://uxplanet.org/user-personas-scenarios-user-stories-and-storyboards-whats-the-difference-cf00315f0799 -->
+                <!-- User <strong>Personas</strong> and <strong>Storyboards</strong> are two important components of user research:
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mx-auto">
+                            <div class="card-body">
+                            <p class="card-text">A user <strong>persona</strong> is an archetype or character that represents a potential user of a website or app.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mx-auto">
+                            <div class="card-body">
+                            <p class="card-text">A <strong>storyboard</strong> is a visual representation of how the user would react with a site or app.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </p> -->
+          <!-- <h1 class="display-5 fw-bold" style="color: white">Hi there!</h1>
+          <p class="col-md-8 fs-4" style="color: white">I’m a designer & story-teller who enjoys sweet and adorable things in life :)</p> -->
+        <!-- </div> -->
+        <!-- CITATION: Boba Citation https://codepen.io/Itchiii/pen/Ldaoaz -->
+        
+        <!-- Boba HTML -->
+        <!-- <div class="col-md-6">
+        <svg xmlns="http://www.w3.org/2000/svg" id="bubbletea" width="250px" height="250px" viewBox="0 0 346.68 473.2">
+            <defs />
+            <g id="tea" stroke="#8574a8" stroke-miterlimit="10" stroke-width="10">
+              <path fill="#a89bc4" d="M215.61 415.61c-13.45 21.59-38 47.78-45.61 50-20.94 6.15-107.6-8.78-137-46.11-11.27-14.3-24.81-31.32-27.23-48.54-3.89-27.74 8.33-54.38 9.8-59 17.16-53.69 81.06-197.19 94.31-196.67 56.33 2.23 126.71 34.48 177.65 58.63 9.25 4.39 23.16 9.23 22.63 19.92-2.63 52.72-65.04 174.41-94.55 221.77z" />
+              <path fill="#8574a8" d="M42.34 252.37c13.31-8.4 31.25-14.24 44.16-5.25 16.05 11.18 16.84 40.35 36.06 44 10.64 2 20.53-5.74 31.18-7.75 18.39-3.47 37.45 14.43 35.16 33-.46 3.73-1.62 7.54-.61 11.16 2 7.21 11.64 9.54 18.73 7.13s12.63-7.9 19-11.83 15-6.16 21.09-1.79c6.88 4.93 6.63 15.29 4.14 23.38-3.36 10.87-6 20.3-12.14 29.88-14 22-19.32 39.92-35.14 60.62-7.8 10.2-21.38 29.53-34 32-7.61 1.51-23.94 1.75-31.5 0-15.12-3.5-32.8-10.79-47.92-14.28-19.18-4.44-36.87-12.44-50.8-26.35-6.41-6.4-26.06-39.3-30.63-47.12-12.88-21.97 24-120.97 33.22-126.8z" opacity=".22" />
+            </g>
+            <g id="cheeks" fill="#de9bb5" stroke="#de9bb5" stroke-miterlimit="10" stroke-width="10">
+              <ellipse cx="261.24" cy="323.62" rx="4" ry="14.5" transform="rotate(-68.17 110.06 395.85)" />
+              <ellipse cx="393.21" cy="376.5" rx="4.5" ry="15.5" transform="rotate(-71.17 245.891 442.235)" />
+            </g>
+            <path id="mouth" fill="none" stroke="#6a5f71" stroke-miterlimit="10" stroke-width="10" d="M181.82 256.64c-8.55 5.26-19.73 5.71-28.93 1.68a36.68 36.68 0 01-19.54-21.78" />
+            <g id="boba" fill="#6a5f71" stroke="#6a5f71" stroke-miterlimit="10" stroke-width="10">
+              <circle id="boba-six" cx="47.65" cy="303.03" r="8.95" />
+              <circle id="boba-five" cx="77.84" cy="407.44" r="16" />
+              <circle id="boba-four" cx="154.25" cy="415.61" r="15.75" />
+              <ellipse id="boba-three" cx="115.13" cy="434.94" rx="11.9" ry="11.5" />
+              <ellipse id="boba-two" cx="52.35" cy="359.82" rx="17" ry="14.5" />
+            </g>
+            <g id="eyes" stroke-miterlimit="10" stroke-width="10">
+              <circle cx="133.35" cy="193.96" r="23.5" fill="#6a5f71" stroke="#6a5f71" />
+              <circle cx="215.61" cy="228.68" r="23.5" fill="#6a5f71" stroke="#6a5f71" />
+              <ellipse cx="224.23" cy="240.42" fill="#fff" stroke="#fff" rx="1.62" ry="5.61" />
+              <ellipse cx="142.94" cy="205.18" fill="#fff" stroke="#fff" rx="1.62" ry="5.61" />
+            </g>
+            <g id="cap" stroke-miterlimit="10" stroke-width="10">
+              <path fill="#e5dbdf" stroke="#e5dbdf" d="M98.37 79.4c3.74-1.79 20.34-7.92 38.72-10 21.7-2.49 46.27 1.75 56.81 3.31 54.13 8 109.9 38.76 128.83 58.08 4 3.58 5.32 8.7 7.93 13.16 2.41 4.13 11.59 12 11 16.92-1.49 12.16-18.42 29.51-21.17 25.22 0 0-149.18-64-225.64-69.65-9.28-.72-1.23-34.77 3.52-37.04z" />
+              <path fill="#e3e3e3" stroke="#e3e3e3" d="M339.21 148.15c.55-16 .22-32.88-8.21-46.42-6-9.67-15.52-16.54-24.78-23.16-12.29-8.78-24.68-17.62-38.36-24-45.7-21.37-102-12.26-144.83 16.68 71.57 26.4 146.57 43.9 216.18 76.9z" />
+              <path fill="#de9bb5" stroke="#de9bb5" d="M201 36.34c-.52-5.11-.88-10.32-2.77-15.1-3.44-8.67-12-14.94-21.28-16.05a29.75 29.75 0 00-25.12 9.7c-9 9.93-10.62 24.42-7.31 39.4a353 353 0 0137.56-9.93c6.48-1.34 13.24-2.6 18.65-6.44.37-.72 1.27-1.07.27-1.58z" />
+              <ellipse cx="464.34" cy="260.32" fill="#fff" stroke="#f7f7f7" rx="3.77" ry="25" transform="rotate(-68.97 314.274 330.766)" />
+              <circle cx="319.54" cy="133.41" r="5.75" fill="#fff" stroke="#fff" />
+            </g>
+        </svg>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3 id="introduction" class="pb-4 mb-4 border-bottom cute-header">
+          Introduction
+        </h3>
+
+        <div class="row">
+            <div class="col-md-6 col-6">
+                <img src="img/Annotated_Sketch.png" class="img-thumbnail" alt="Fig.1 - Interface Sketch" style="height: 540px; width: 100%">
+               
+            </div>
+            <div class="col-md-6 col-6">
+                <div class="card mx-auto" style="height: 540px";>
+                    <div class="card-body">
+                        <h4 class="card-title">Overall Structure</h4>
+                        <p class="card-text">This interface is the Snackpass self-checkout machine used at Tiger Sugar,  a popular boba shop on Thayer street. Its purpose is to facilitate the process of ordering boba for customers. It has three main components: 
+                            <ol>
+                                <li>
+                                    The signs at the top that tell the users the purpose of the machine and the accepted
+                            payment methods
+                                </li>
+                                <li>
+                                    The main screen for selecting and making the order in the middle 
+                                </li>
+                                <li>
+                                    The card reader for processing payments for the order at the bottom
+                                </li>
+                            </ol>
+                            These three main components function together to allow the users to make orders.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 id="user-observations" class="pb-4 mb-4 mt-4 border-bottom cute-header">
+            User Observations
+        </h3>
+  
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card mx-auto" style="height: 1000px">
+                    <div class="card-body">
+                        <h5 class="card-title">Key Observations from Users</h5>
+                        <p class="card-text">
+                            <ul>
+                                <li>
+                                    In general, the users spent around one minute interacting with the interface. 
+                                </li>
+                                <li>
+                                    The users went through the steps on the interface in a similar order.&nbsp;They all followed this pattern: 
+                                    <ol>
+                                        <li>
+                                            Tap on the screen to begin ordering
+                                        </li>
+                                        <li>
+                                            Select product(s)
+                                        </li>
+                                        <li>
+                                            Add customization to the product and add it to their cart
+                                        </li>
+                                        <li>
+                                            Check out
+                                        </li>
+                                        <li>
+                                            Add phone number
+                                        </li>
+                                        <li>
+                                            Add optional tip
+                                        </li>
+                                        <li>
+                                            Pay
+                                        </li>
+                                        <li>
+                                            Get final confirmation with order number
+                                        </li>
+                                        <li>
+                                            Go back to home page
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    Some of the users took some time to scroll through the products on the home page while others jumped straight to selecting the product they wanted.
+                                </li>
+                                <li>
+                                    The users went through most of the steps quickly, with occasional pauses.
+                                </li>
+                                <li>
+                                    All three users paused and seemed surprised (i.e., raised their eyebrows and squinted at the screen) when they were interacting with two features of the interface: 
+                                    <ol>
+                                        <li>
+                                            when it asked for the user’s phone number
+                                        </li>
+                                        <li>
+                                            when it defaulted the tip to two dollars
+                                        </li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="card mx-auto" style="height: 1000px">
+                    <div class="card-body">
+                        <h5 class="card-title">Interview Questions</h5>
+                        <p class="card-text">
+                            <ol>
+                                <li>
+                                    What does your typical weekday look like?
+                                </li>
+                                <li>
+                                    What is your goal for using this interface?
+                                </li>
+                                <li>
+                                    How often do you use this interface to order boba?
+                                </li>
+                                <li>
+                                    What is your relationship like with boba?
+                                </li>
+                                <li>
+                                    Does ordering boba impact other areas of your life/work? If so, how?
+                                </li>
+                                <li>
+                                    How much time do you typically spend on ordering boba with this interface?
+                                </li>
+                                <li>
+                                    Tell me about the last time you tried to order boba with this interface.
+                                </li>
+                                <li>
+                                    Why did you choose to order boba on this interface over ordering in person?
+                                </li>
+                                <li>
+                                    Is there anything you like about ordering boba on this interface?
+                                </li>
+                                <li>
+                                    Is there anything particularly challenging about ordering boba on the interface?
+                                </li>
+                                <li>
+                                    Is there anything surprising or unexpected about this interface?
+                                </li>
+                                <li>
+                                    Is there anything you would change/add/remove to make this interface better for you?
+                                </li>
+                                <li>
+                                    What feature of the interface is most important to you?
+                                </li>
+                                <li>
+                                    What feature of the interface is least important to you?
+                                </li>
+                                <li>
+                                    What is your opinion about the organization of information on the screen?
+                                </li>
+                                <li>
+                                    Would you keep using this interface in the future?
+                                </li>
+                                <li>
+                                    Is there any other boba ordering interfaces you've tried out?
+                                </li>
+                                <li>
+                                    How does this interface compare to other boba ordering interfaces?
+                                </li>
+                                <li>
+                                    Is there anything in particular that you like/dislike about the other boba ordering interfaces?
+                                </li>
+                                <li>
+                                    What adjectives would you use to describe this interface?
+                                </li>
+                                <li>
+                                    Does this interface feel like it was designed for you?
+                                </li>
+                                <li>
+                                    On a scale of 1-5, how likely are you to recommend this interface to a friend?
+                                </li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="card col-md-6 mx-auto">
+                    <div class="card-body">
+                        <h5 class="card-title">User Response</h5>
+                        <p class="card-text">
+                            <ul>
+                                <li>
+                                    The users share a common goal for using the interface: order boba quickly without having to talk to someone. 
+                                </li>
+                                <li>
+                                    The users like how easy and efficient it is to use the interface to accomplish their goal. They all mentioned how they can just walk in, make a few clicks on the interface, and get boba.
+                                </li>
+                                <li>
+                                    The users like the clear organization of information on the interface. They like how they can scroll through all the products, view products by category and search for a specific product through the search bar. The users prefer to use the interface over in person ordering because they have access to all the information at their fingertip instead of having to squint at the small text on the physical menu.
+                                </li>
+                                <li>
+                                    The users were confused or surprised by some features of the interface. They did not understand the purpose of the phone number input feature. They were confused by the claim rewards feature because they didn’t know what the rewards entail. They did not like when the interface defaulted the tip to two dollars and considered a trick for them to spend more money without paying attention.
+                                </li>
+                                <li>
+                                    The users found some features of the interface hard to find, such as entering the promo code and undoing order in the cart. They said that the color and position of the text on the screen made these features hard to notice without paying closer attention.
+                                </li>
+                            </ul>
+                        </p>
+                        </div>
+                </div>
+            </div>
+            
+            <h3 id="empathy-maps" class="pb-4 mb-4 border-bottom cute-header">
+                Empathy Maps
+            </h3>
+
+            <div class="card mx-auto">
+                <div class="card-body">
+                <!-- CITATION: Empathy map definition from this article: https://www.nngroup.com/articles/empathy-mapping/#:~:text=Definition%3A%20An%20empathy%20map%20is,empathy%20mapping%20and%20its%20uses -->
+                <p class="card-text">An <strong>Empathy Map</strong> is a collaborative visualization used to articulate what we know about a particular type of user. Typically empathy maps are split into 4 quadrants (<i>Says</i>, <i>Thinks</i>, <i>Does</i> and <i>Feels</i>).
+                They help designers gain a deeper understanding of their target audience and the reason behind their actions.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card" style="height: 950px;">
+                        <img class="card-img-top" src="img/Empathy_Map_One.png" alt="Fig.2 - Emapthy Map 1">
+                        <div class="card-body">
+                        <h5 class="card-title">Empathy Map for <i>Newbie Natalie</i></h5>
+                        <p class="card-text"><i>Newbie Natalie</i> is a Brown student who loves drinking boba with friends. It's her first time ordering at Tiger Sugar. She chose to use the self checkout interface over in person ordering because she wants to explore different options and order quickly.
+                        However, she's surprised and confused by some features of the interface, such as when it asked for her phone number and when it defaulted the tip to 2 dollars. Natalie is representative of users who are new to Tiger Sugar and its self checkout interface. She is also representative because most of Tiger Sugar's customers are Brown students who love drinking boba. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card" style="height: 950px;">
+                        <img class="card-img-top" src="img/Empathy_Map_Two.png" alt="Fig.3 - Empathy Map 2">
+                        <div class="card-body">
+                        <h5 class="card-title">Empathy Map for <i>Experienced Edward</i></h5>
+                        <p class="card-text"><i>Experienced Edward</i> is a Brown stduent who LOVEs drinking boba, and Tiger Sugar is his go-to boba place. He always chooses to use the self checkout interface because it's very efficient and he doesn't have to interact with anyone.
+                            However, as a boba fanatic with high standards for his boba, he thinks that the interface doesn't provide an easy way to add custom adjustments. He also doesn't understand the purpose of some features but are used to them.&nbsp;
+                            Edward is representative of Tiger Sugar's returning customers.&nbsp;These users are very familiar with the products and the interface itself.&nbsp;They love a simple and efficient boba ordering interface, but they also look for features beyond the basics, such as being able to customize their order.
+                        </i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 id="storyboards" class="pb-4 mb-4 border-bottom cute-header">
+                Storyboards
+            </h3>
+
+            <div class="card mx-auto">
+                <div class="card-body">
+                <p class="card-text">A <strong>Storyboard</strong> is an illustration that represent shots that ultimately represent a story.&nbsp;In UX, it is a tool that helps designers visually
+                predict and explore a user's experience with a product. It is an effective way to capture, relate and explore experiences in the design process.</p>
+                </div>
+            </div>
+    
+            <div class="card mx-auto" style="width: 100%;">
+                <img class="card-img-top" src="img/StoryBoard_One.png" alt="Fig.4 - Story Board 1">
+                <img class="card-img-top" src="img/StoryBoard_Two.png" alt="Fig.5 - Story Board 2">
+            </div>
+
+            <h3 id="conclusion" class="pb-4 mt-4 border-bottom cute-header">
+                Conclusion
+            </h3>
+
+            <p>Personas and Storyboards are two effective tools for designers to understand how users interact with a particular interface.&nbsp;Throughout the process of creating <i>Newbie Natalie</i> and <i>Experienced Edward</i>, I was able to understand and empathize more with the users of the self-checkout machine at Tiger Sugar.</p>
+            <p>I also learned important skills for conducting User research, including coming up with stimulating questions, observing users, and creating personas and storyboard.</p>
+        
+        </div>
+      </div>
+    </div>
+
+    <a id="float" href="work.html">
+          <i class="fa-solid fa-arrow-left" style="color: white"></i>
+          Back to Portfolio
+      </a>
+
+   <footer class="footer footer-bg custom-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 d-flex justify-content-end align-items-start flex-column footer-mobile">
+            <p class="mb-1">Personas and Storyboards</p>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+      <!-- CITATION: Tooltip Code https://getbootstrap.com/docs/5.0/components/tooltips/ -->
+      <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+      </script>
+
+      <!-- Lightbox CDN for Modal Image Gallery -->
+      <!-- CITATION: https://trvswgnr.github.io/bs5-lightbox/ -->
+      <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.2/dist/index.bundle.min.js"></script>
+
+      <!-- import index.js in this directory -->
+      <script src="js/boba.js"></script>
+</body>
+
+</html>
