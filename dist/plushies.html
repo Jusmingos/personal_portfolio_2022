@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Floofy Plushies</title>
+
+  <!-- Favicons -->
+  <!-- CITATION: Taken from https://play.google.com/store/apps/details?id=com.alfianlosari.hackernews&hl=en&gl=US -->
+  <link href="img/penguin_image.png" rel="icon">
+
+  <!-- Font -->
+  <!-- Sofia-Pro Adobe Font -->
+  <link rel="stylesheet" href="https://use.typekit.net/blg0zww.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Font Style Sheet -->
+    <link href="https://fonts.cdnfonts.com/css/varela-round-2" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/almost-like-the-blues" rel="stylesheet">
+
+    <!-- Figtree Font CDN -->
+    <link href='https://fonts.googleapis.com/css?family=Figtree' rel='stylesheet'>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Index CSS File -->
+  <link href="css/plushies.css" rel="stylesheet">
+
+  <!-- From https://getbootstrap.com/docs/5.0/examples/#custom-components Jumbotron Example -->
+  <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- CITATION: https://getbootstrap.com/docs/5.0/components/navbar/ -->
+
+  <nav class="navbar navbar-expand-lg navbar-light text-white sticky-top custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white cute-header" href="#">
+        Floofy Plushies
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link cute-header" style="color: white" aria-current="page" href="#introduction">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cute-header" style="color: white" href="#usability">Usability Issues</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cute-header" style="color: white" href="#design">Design Choices</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cute-header" style="color: white" href="#final">Final Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link cute-header" style="color: white" href="#conclusion">Conclusion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+   <!-- CITATION: Header from https://codepen.io/goodkatz/pen/LYPGxQz?editors=1100 -->
+   <div class="header mb-5">
+
+    <!--Content before waves-->
+    <div class="inner-header flex">
+        <div class="row">
+            <div class="col md-6" style="padding-top: 70px">
+                <h1 style="color: rgb(52, 49, 49)">Let's create a plushie shop!</h1>
+            </div>
+            <div class="col md-6">
+                <!-- PENGUIN HTML -->
+                <div class="penguin">
+                    <div class="penguin-bottom">
+                    <div class="right-hand"></div>
+                    <div class="left-hand"></div>
+                    <div class="right-feet"></div>
+                    <div class="left-feet"></div>
+                    </div>
+                    <div class="penguin-top">
+                    <div class="right-cheek"></div>
+                    <div class="left-cheek"></div>
+                    <div class="belly"></div>
+                    <div class="right-eye">
+                        <div class="sparkle"></div>
+                    </div>
+                    <div class="left-eye">
+                        <div class="sparkle"></div>
+                    </div>
+                    <div class="blush-right"></div>
+                    <div class="blush-left"></div>
+                    <div class="beak-top"></div>
+                    <div class="beak-bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- CITATION: button component FlexStart template https://bootstrapmade.com/demo/FlexStart/ -->
+     <div class="flex text-center text-lg-start mb-3">
+      <a href="#introduction" class="start scrollto d-inline-flex align-items-center justify-content-center align-self-center mb-5">
+        <span>Plushie time!</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+    </div>
+
+
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-md-12">
+          <div class="row">
+            <h3 id="introduction" class="pb-4 mb-4 border-bottom cute-header">
+                Introduction
+              </h3>
+              <p>
+                  As a plushie lover, I've spent a lot of time browsing through different shopping sites. I noticed that many of the existing sites have usability issues, such as limited language availability or visual clutter. It is particularly hard for plushie lovers here to find reliable websites for buying plushies produced in other countries, like Japan or Korea. With this application, I hope to create a platform for plushie lovers like me to shop for their favorite characters. 
+              </p>
+          </div>
+        
+          <div class="row">
+              <div class="col-md-12">
+                <h3 id="usability" class="pb-4 mb-4 mt-4 border-bottom cute-header">
+                    Usability Issues
+                </h3>
+                <p>
+                    Here is an analysis of the usability issues found in two sample shopping sites.
+                </p>
+              </div>
+    
+            <div class="row">
+                <div class="col-md-6">
+                    <a class="mt-4" href="https://otakumode.com/search?mode=shop&keyword=sirotan%20seal&rating=4&page=1">
+                        <img class="site img-fluid card-img-top round-corner" src="img/plushie_website_one.png" alt="Store 2">
+                    </a>
+                </div>
+    
+                <div class="col-md-6">
+                    <div class="accordion" id="lofi">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                #1 Visual Clutter
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                              data-bs-parent="#lofi">
+                              <div class="accordion-body">
+                                The images for the products are too small, which make them a bit hard to see. This is an important usability issue, since images are an important aspect of plushies. The titles also have similar font size as the body, which makes it hard to distinguish between visual elements.
+                              </div>
+                            </div>
+                          </div>
+        
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                #2 Lack of filter for "sold out" items
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                              data-bs-parent="#lofi">
+                              <div class="accordion-body">
+                                You cannot filter by availability on this site. This is an important functionality since users often would want to view only available products and filter out the unavailable ones to improve shopping efficiency.
+                              </div> 
+                            </div>
+                          </div>
+    
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                #3 Learnability
+                              </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                              data-bs-parent="#lofi">
+                              <div class="accordion-body">
+                                There are too many filters stacked together on the left of the website. These filters could be better separated into different categories. Furthermore, there are three separate navigation bars at the top, which can be quite confusing, especially for new users navigating the site. Instead, they can be consolidated into a single navigation bar for clarity and better learnability.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <a class="mt-4" href="https://meccha-japan.com/en/63-toys-plush-and-dolls">
+                        <img class="site img-fluid card-img-top round-corner" src="img/website_two.png" alt="Store 2">
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            #1 Low Contrast
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                          data-bs-parent="#lofi">
+                          <div class="accordion-body">
+                            Some of the visual elements have low contrast between the text and the background. For example, some of the buttons have white text against light blue background, which make them hard to read.
+                          </div>
+                        </div>
+                    </div>
+    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            #2 Redundant Information
+                          </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                          data-bs-parent="#lofi">
+                          <div class="accordion-body">
+                            Similar to the first website, this website has multiple navigation bars, both on the side and at the top. These nav bars have a lot of repeated information, which decreases learnability for new users and efficiency for returning users.
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3 id="design" class="pb-4 mb-4 mt-4 border-bottom cute-header">
+                    Design Choices
+                </h3>
+                <p>
+                    <b>Click on the images to view them in more detail!</b>
+                </p>
+                <!-- Modal Image Gallary Citation: https://trvswgnr.github.io/bs5-lightbox/ -->
+                <div class="row">
+                    <a href="img/plushies_annotation_one.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-6">
+                      <img src="img/plushies_annotation_one.png" class="img-fluid site">
+                    </a>
+                    <a href="img/plushies_annotation_two.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-md-6">
+                      <img src="img/plushies_annotation_two.png" class="img-fluid site">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+            
+       
+        <div class="row">
+            <div class="col-md-12">
+                <h3 id="final" class="pb-4 mb-4 mt-4 border-bottom cute-header">
+                    Final Product
+                </h3>
+                <p>
+                    Here is the final product! Click on the image to visit the Floofy Plushies shop <i class="fa-solid fa-face-grin-hearts"></i>
+                </p>
+                <div class="d-flex justify-content-center">
+                    <div class="website-container">
+                        <!-- make clicking image open site, on hover make it expand -->
+                        <a href="https://hungryquokka101.github.io/development/">
+                          <img class="site img-fluid card-img-top round-corner" src="img/website_screenshot.png" alt="Iterative Design Project Page">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <h3 id="conclusion" class="pb-4 mb-4 mt-4 border-bottom cute-header">
+                    Conclusion
+                </h3>
+                <p>
+                    Throughout the process of building this application, I learned a lot of valuable lessons regarding how to create a shopping site that usable and accessible. As a lover of plushies, I’ve been on many shopping sites. Revisiting these sites for this project with the mindset of a designer made me notice many usability and accessibility issues that I never noticed before. For example, I never realized that some of these sites are actually quite hard to navigate and lack certain functionalities like filtering by availability.
+                </p>
+                <p>
+                    This process has shown me that when you observe everything through the lens of a UX designer, you can make observations that may have never crossed your mind before. These observations helped me make design choices in my own application that attempt to resolve the usability issues in existing sites.
+                </p>
+                <p>
+                    I'm still only a beginner in UX design, and I have a lot more to learn. I look forward to learning more about design principles and using them to create meaningful and accessible applications!
+                </p>
+            </div>
+        </div> 
+    </div>
+    </div>
+
+    <a id="float" href="work.html">
+        <i class="fa-solid fa-arrow-left" style="color: white"></i>
+        Back to Portfolio
+    </a>
+
+     <footer class="footer footer-bg custom-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 d-flex justify-content-end align-items-start flex-column footer-mobile">
+              <p>Floofy Plushies</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+      <!-- CITATION: Tooltip Code https://getbootstrap.com/docs/5.0/components/tooltips/ -->
+      <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+      </script>
+
+      <!-- Lightbox CDN for Modal Image Gallery -->
+      <!-- CITATION: https://trvswgnr.github.io/bs5-lightbox/ -->
+      <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.2/dist/index.bundle.min.js"></script>
+
+      <!-- import index.js in this directory -->
+      <script src="js/plushies.js"></script>
+</body>
+
+</html>

@@ -92,7 +92,6 @@
   box-sizing: border-box; }
 
 body {
-  background: linear-gradient(to right, #F8C8DC, #E0B0FF);
   color: #4a4e53;
   height: 100%;
   margin: 0;
@@ -185,9 +184,12 @@ main {
     height: 80%;
     border: 3px #4a4e53 solid; }
     .projects img:hover {
-      opacity: 0.5;
       border-color: #942bd5;
-      transition: all 0.5s ease-out; }
+      /* on hover make expand */
+      -webkit-transform: rotateZ(-2deg);
+      -ms-transform: rotateZ(-2deg);
+      transform: rotateZ(-2deg);
+      transition: 1s ease; }
 
 .boxes {
   display: flex;
@@ -266,7 +268,7 @@ main {
   background-color: #c5e8f5; }
 
 .slide3 {
-  background-color: #fefec6; }
+  background-color: #f3b2b2; }
 
 @keyframes slide {
   0% {

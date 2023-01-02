@@ -1,0 +1,557 @@
+@import url('https://fonts.cdnfonts.com/css/varela-round-2');
+@import url('https://fonts.cdnfonts.com/css/almost-like-the-blues');
+
+* {
+  color: #4a4e53;
+}
+body {
+    font-family: "Figtree", sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+    /* background-color: #e7e1fb; */
+    /* height: 100%; */
+    font-size: 18px;
+  }
+
+html {
+  /* height: 100%; */
+}
+
+h3 {
+  font-weight: 500;
+}
+
+  /* .cute-header {
+    font-family: 'Almost like the blues', sans-serif;
+  } */
+
+/* CITATION: https://codepen.io/goodkatz/pen/LYPGxQz?editors=1100 */
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(to right, #fab8d4, #E0B0FF);
+  color:white;
+}
+
+.logo {
+  width:50px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  height:80vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.start {
+  line-height: 0;
+  padding: 20px 45px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.5s;
+  color: rgb(90, 40, 176);
+  background: #fff;
+  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+}
+
+.start i {
+  margin-left: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.start:hover {
+  color: rgb(90, 40, 176);
+}
+
+.start:hover i {
+  color: rgb(90, 40, 176);
+  transform: translateX(5px);
+}
+  
+.section {
+    padding: 2rem 0 7rem;
+}
+
+.subheader {
+    font-weight: 600;
+    color: #4154f1;
+}
+
+.custom-navbar {
+    background: #6025bf;
+}
+
+.custom-footer {
+  /* color: #e7e1fb; */
+  padding: 2rem 0;
+}
+
+
+.jumbo-bg {
+    background-color: #020c63;
+}
+
+button {
+    background-color: #020c63;
+    color: #fff;
+    /* make a glow effect */
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dark-bg {
+    /* background-color: #f6f9fe; */
+}
+
+.website-container {
+  /* height: 100%; */
+  width: 80%;
+}
+
+#float {
+  line-height: 0;
+  padding: 15px 25px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  background: rgb(90, 40, 176);
+  /* float bottom left */
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1rem;
+}
+
+#float i {
+  margin-right: 7px;
+  font-size: 15px;
+}
+
+#float:hover {
+  color: white;
+  transform: scale(1.025);
+  transition: 0.75s;
+}
+
+/* on hover make expand */
+.site:hover {
+    /* on hover make expand */
+    -webkit-transform: rotateZ(-2deg);
+    -ms-transform: rotateZ(-2deg);
+    transform: rotateZ(-2deg);
+    transition: 1s ease;
+}
+
+/* make Y Combinator orange, bold, and underline */
+.topic {
+    color: #020c63;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.onwards {
+    line-height: 0;
+    padding: 20px 45px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.5s;
+    color: #fff;
+    background: #4154f1;
+    box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+}
+
+.onwards i {
+    margin-left: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.onwards:hover {
+    color: white;
+}
+
+.onwards:hover i {
+    color: white;
+    transform: translateX(5px);
+}
+
+/* CITATION: https://codepen.io/Itchiii/pen/Ldaoaz */
+.path {
+    stroke-dasharray: 572;
+    stroke-dashoffset: 572;
+    animation: pathAnimation 1.2s linear 0.001s forwards;
+    visibility: hidden;
+} 
+
+.path2 { 
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+    animation: pathAnimation2 1.5s linear 1.2s forwards; 
+    visibility: hidden;
+}
+
+.eye {
+    stroke-dasharray: 68;
+    stroke-dashoffset: 68;
+    animation: eyeAnimation .5s linear 2.72s forwards;
+    visibility: hidden;
+}
+
+@keyframes pathAnimation { 
+    from {visibility: hidden; stroke-dashoffset: 572;}
+    to { visibility: visible; stroke-dashoffset: 0; }
+}
+
+@keyframes pathAnimation2 {  
+    from {visibility: hidden;stroke-dashoffset: 800; }
+    to { visibility: visible; stroke-dashoffset: 0; }
+}
+
+@keyframes eyeAnimation {  
+    from { visibility: hidden;stroke-dashoffset: 68;}
+    to {visibility: visible; stroke-dashoffset: 0;}
+}
+  
+
+/* boba css */
+ 
+:root {
+    /* background-color: #f5ecf8; */
+  }
+  
+  #bubbletea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+  }
+  
+  #cheeks {
+    -webkit-animation: blush 4s infinite;
+    animation: blush 4s infinite;
+  }
+  
+  @-webkit-keyframes blush {
+    50% {
+      stroke: #b7094c;
+    }
+  }
+  
+  @keyframes blush {
+    50% {
+      stroke: #b7094c;
+    }
+  }
+  
+  #boba-two {
+    -webkit-animation: jiggle 5s infinite;
+    animation: jiggle 5s infinite;
+  }
+  #boba-three {
+    -webkit-animation: jiggle 3s infinite;
+    animation: jiggle 3s infinite;
+  }
+  #boba-four {
+    -webkit-animation: jiggle 4s infinite;
+    animation: jiggle 4s infinite;
+  }
+  
+  #boba-five {
+    -webkit-animation: jiggle 2s infinite;
+    animation: jiggle 2s infinite;
+  }
+  
+  #boba-six {
+    -webkit-animation: jiggle 6s infinite;
+    animation: jiggle 6s infinite;
+  }
+  
+  @-webkit-keyframes jiggle {
+    25% {
+      -webkit-transform: translateY(3px);
+      transform: translateY(3px);
+    }
+    50% {
+      -webkit-transform: translateY(6px) scale(0.98);
+      transform: translateY(6px) scale(0.98);
+    }
+  
+    100% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+  }
+  
+  @keyframes jiggle {
+    25% {
+      -webkit-transform: translateY(3px);
+      transform: translateY(3px);
+    }
+    50% {
+      -webkit-transform: translateY(6px) scale(0.98);
+      transform: translateY(6px) scale(0.98);
+    }
+  
+    100% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+  }
+
+/* PENGUIN CSS */
+.penguin {
+  /* change code below */
+  --penguin-skin: black;
+  --penguin-belly: white;
+  --penguin-beak: orange;
+  /* change code above */
+
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 5%;
+  width: 300px;
+  height: 300px;
+}
+
+.penguin-top {
+  top: 10%;
+  left: 25%;
+  background: var(--penguin-skin, gray);
+  width: 50%;
+  height: 45%;
+  border-radius: 70% 70% 60% 60%;
+}
+
+.penguin-bottom {
+  top: 40%;
+  left: 23.5%;
+  background: var(--penguin-skin, gray);
+  width: 53%;
+  height: 45%;
+  border-radius: 70% 70% 100% 100%;
+}
+
+.right-hand {
+  top: 5%;
+  left: 25%;
+  background: var(--penguin-skin, black);
+  width: 30%;
+  height: 60%;
+  border-radius: 30% 30% 120% 30%;
+  transform: rotate(130deg);
+  z-index: -1;
+  animation-duration: 2s;
+  animation-name: wave;
+  animation-iteration-count: infinite;
+  transform-origin: 0% 0%;
+  animation-timing-function: linear;
+}
+
+.left-hand {
+  top: 0%;
+  left: 75%;
+  background: var(--penguin-skin, gray);
+  width: 30%;
+  height: 60%;
+  border-radius: 30% 30% 30% 120%;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+
+.right-cheek {
+  top: 15%;
+  left: 35%;
+  background: var(--penguin-belly, white);
+  width: 60%;
+  height: 70%;
+  border-radius: 70% 70% 60% 60%;
+}
+
+.left-cheek {
+  top: 15%;
+  left: 5%;
+  background: var(--penguin-belly, white);
+  width: 60%;
+  height: 70%;
+  border-radius: 70% 70% 60% 60%;
+}
+
+.belly {
+  top: 60%;
+  left: 2.5%;
+  background: var(--penguin-belly, white);
+  width: 95%;
+  height: 100%;
+  border-radius: 120% 120% 100% 100%;
+}
+
+.right-feet {
+  top: 85%;
+  left: 60%;
+  background: var(--penguin-beak, orange);
+  width: 15%;
+  height: 30%;
+  border-radius: 50% 50% 50% 50%;
+  transform: rotate(-80deg);
+  z-index: -2222;
+}
+
+.left-feet {
+  top: 85%;
+  left: 25%;
+  background: var(--penguin-beak, orange);
+  width: 15%;
+  height: 30%;
+  border-radius: 50% 50% 50% 50%;
+  transform: rotate(80deg);
+  z-index: -2222;
+}
+
+.right-eye {
+  top: 45%;
+  left: 60%;
+  background: black;
+  width: 15%;
+  height: 17%;
+  border-radius: 50%;
+}
+
+.left-eye {
+  top: 45%;
+  left: 25%;
+  background: black;
+  width: 15%;
+  height: 17%;
+  border-radius: 50%;
+}
+
+.sparkle {
+  top: 25%;
+  left: 15%;
+  background: white;
+  width: 35%;
+  height: 35%;
+  border-radius: 50%;
+}
+
+.blush-right {
+  top: 65%;
+  left: 15%;
+  background: pink;
+  width: 15%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+.blush-left {
+  top: 65%;
+  left: 70%;
+  background: pink;
+  width: 15%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+.beak-top {
+  top: 60%;
+  left: 40%;
+  background: var(--penguin-beak, orange);
+  width: 20%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+.beak-bottom {
+  top: 65%;
+  left: 42%;
+  background: var(--penguin-beak, orange);
+  width: 16%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+/* body {
+  background: #fce4ec;
+} */
+
+.penguin * {
+  position: absolute;
+}
+.penguin {
+  animation-duration: 10s;
+  animation-name: loop;
+  animation-iteration-count: infinite;
+  transform-origin: 0% 0%;
+  animation-timing-function: linear;
+}
+
+@keyframes wave {
+  10% {
+    transform: rotate(110deg);
+  }
+  30% {
+    transform: rotate(130deg);
+  }
+  50% {
+    transform: rotate(110deg);
+  }
+  80% {
+    transform: rotate(130deg);
+  }
+  100% {
+    transform: rotate(110deg);
+  }
+}
+
+@keyframes loop {
+  0% {
+    transform: rotateY(0deg);
+  }
+  25% {
+    transform: rotateY(-10deg);
+  }
+  50% {
+    transform: rotateY(0deg);
+  }
+  75% {
+    transform: rotateY(10deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+/* CITATION: Gradient Scrollbar https://h.dhairyashah.dev/how-to-make-a-beautiful-gradient-scroll-bar-with-css
+  /* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #5A5A5A;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#E0B0FF, #fab8d4, #AEC6CF);
+}
+/* disable background on horiztonal scroll */
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}

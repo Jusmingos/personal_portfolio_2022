@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(to right, #F8C8DC,#E0B0FF);
+    // background: linear-gradient(to right, #F8C8DC,#E0B0FF);
     color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
@@ -144,9 +144,14 @@ main {
         border: 3px #4a4e53 solid;
 
         &:hover {
-            opacity: 0.5;
+            // opacity: 0.5;
             border-color: $secondary-color;
-            @include easeOut;
+            // @include easeOut;
+            /* on hover make expand */
+            -webkit-transform: rotateZ(-2deg);
+            -ms-transform: rotateZ(-2deg);
+            transform: rotateZ(-2deg);
+            transition: 1s ease;
         }
     }
 }
@@ -259,7 +264,7 @@ main {
 }
 
 .slide3 {
-    background-color: #fefec6;
+    background-color: rgb(243, 178, 178);
 }
 
 @keyframes slide {
