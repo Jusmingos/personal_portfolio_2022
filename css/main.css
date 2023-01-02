@@ -181,15 +181,27 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    height: 80%;
-    border: 3px #4a4e53 solid; }
+    height: 100%; }
     .projects img:hover {
-      border-color: #942bd5;
       /* on hover make expand */
       -webkit-transform: rotateZ(-2deg);
       -ms-transform: rotateZ(-2deg);
       transform: rotateZ(-2deg);
       transition: 1s ease; }
+  .projects h3 {
+    font-weight: 700; }
+  .projects .project-div {
+    height: 70%; }
+  .projects .item-one-div {
+    background: linear-gradient(to right, #fcbe4a, #ffffc2); }
+  .projects .item-two-div {
+    background: linear-gradient(to right, #fab8d4, #E0B0FF); }
+  .projects .item-three-div {
+    background: linear-gradient(to right, #543ab7 0%, #00acc1 100%); }
+  .projects .item-four-div {
+    background: linear-gradient(to right, #C1E1C1, #A7C7E7); }
+  .projects .item-five-div {
+    background: linear-gradient(to right, #543ab7 0%, #00acc1 100%); }
 
 .boxes {
   display: flex;
@@ -339,21 +351,3 @@ main {
       font-size: 5rem; }
   .projects {
     grid-template-columns: 1fr; } }
-
-    /* CITATION: Gradient Scrollbar https://h.dhairyashah.dev/how-to-make-a-beautiful-gradient-scroll-bar-with-css
-  /* width */
-  ::-webkit-scrollbar {
-    width: 12px;
-  }
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #5A5A5A;
-  }
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: linear-gradient(#E0B0FF, #fab8d4, #AEC6CF);
-  }
-  /* disable background on horiztonal scroll */
-  ::-webkit-scrollbar-track-piece {
-    background-color: transparent;
-  }
