@@ -140,12 +140,12 @@ main {
 
     img {
         width: 100%;
-        height: 70%;
-        border: 3px #4a4e53 solid;
+        height: 100%;
+        // border: 3px #4a4e53 solid;
 
         &:hover {
             // opacity: 0.5;
-            border-color: $secondary-color;
+            // border-color: $secondary-color;
             // @include easeOut;
             /* on hover make expand */
             -webkit-transform: rotateZ(-2deg);
@@ -157,6 +157,30 @@ main {
 
     h3 {
         font-weight: 700;
+    }
+
+    .project-div {
+        height: 70%;
+    }
+
+    .item-one-div {
+        background: linear-gradient(to right, rgb(252, 190, 74), #ffffc2);
+    }
+
+    .item-two-div {
+        background: linear-gradient(to right, #fab8d4, #E0B0FF);
+    }
+
+    .item-three-div {
+        background: linear-gradient(to right, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    }
+
+    .item-four-div {
+        background: linear-gradient(to right, #C1E1C1, #A7C7E7);
+    }
+
+    .item-five-div {
+        background: linear-gradient(to right, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
     }
 }
 

@@ -19,7 +19,7 @@ h3 {
 .header {
   position:relative;
   text-align:center;
-  background: linear-gradient(to right, #f9cadd, #e7c7fb);
+  background: linear-gradient(to right, #C1E1C1, #A7C7E7);
   color:white;
 }
 
@@ -537,7 +537,7 @@ button {
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(#E0B0FF, #fab8d4, #AEC6CF);
+  background: linear-gradient(#C1E1C1, #A7C7E7, #e7e1fb);
 }
 /* disable background on horiztonal scroll */
 ::-webkit-scrollbar-track-piece {
