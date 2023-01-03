@@ -53,7 +53,7 @@
       transform: translate3d(0, 0, 0); }
     .menu-branding img {
       width: 250px;
-      height: 250px;
+      height: 270px;
       border-radius: 50%;
       border: solid 3px #942bd5; }
   .menu .nav-item {
@@ -123,21 +123,25 @@ header {
 .text-secondary {
   color: #942bd5; }
 
-main {
+#home, main {
   display: inline-block;
   padding: 4rem;
   min-height: calc(100vh - 60px); }
-  main .icons {
+  #home .icons, main .icons {
     margin-top: 1rem; }
-    main .icons a {
+    #home .icons a, main .icons a {
       padding: 0.4rem; }
-      main .icons a:hover {
+      #home .icons a:hover, main .icons a:hover {
         color: #942bd5;
         transition: all 0.5s ease-out; }
-  main#home {
+  #home#home, main#home {
     overflow: hidden; }
-    main#home h1 {
+    #home#home h1, main#home h1 {
       margin-top: 20vh; }
+
+.child {
+  display: inline-block;
+  vertical-align: middle; }
 
 .about-info {
   display: grid;
@@ -150,7 +154,7 @@ main {
     margin: auto;
     border-radius: 50%;
     width: 250px;
-    height: 250px;
+    height: 270px;
     border: #942bd5 3px solid; }
   .about-info .bio {
     grid-area: bio;

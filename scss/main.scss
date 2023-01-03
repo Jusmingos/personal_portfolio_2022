@@ -49,7 +49,7 @@ header {
     color: $secondary-color;
 }
 
-main {
+#home, main {
     display: inline-block;
     padding: 4rem;
     // height: 100%;
@@ -74,6 +74,16 @@ main {
     }
 }
 
+.parent {
+    // padding: 2rem 2rem;
+}
+
+.child {
+    display: inline-block;
+    // padding: 1rem 1rem;
+    vertical-align: middle;
+}
+
 .about-info {
     display: grid;
     grid-gap: 30px;
@@ -89,7 +99,7 @@ main {
         margin: auto;
         border-radius: 50%;
         width: 250px;
-        height: 250px;
+        height: 270px;
         border: $secondary-color 3px solid;
     }
     
