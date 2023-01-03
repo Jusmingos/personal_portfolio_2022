@@ -11,12 +11,19 @@
         grid-template-columns: repeat(3, 1fr);
     }
     .content {
-        font-size: 25px;
+        font-size: 22px;
+    }
+
+    .avatar-profile {
+        display: none;
     }
 }
 
 // Tablets & Small Laptops
 @include mediaMd {
+    // body {
+    //     overflow-y: hidden;
+    // }
     main {
         align-items: center;
         text-align: center;
@@ -72,6 +79,10 @@
     .content {
         font-size: 18px;
     }
+
+    .avatar-profile {
+        display: none;
+    }
 }
 
 // Smartphones
@@ -90,5 +101,9 @@
 
     .projects {
         grid-template-columns: 1fr;
+    }
+
+    .avatar-profile {
+        display: none;
     }
 }
