@@ -310,7 +310,9 @@ header {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
   .content {
-    font-size: 25px; } }
+    font-size: 22px; }
+  .avatar-profile {
+    display: none; } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -343,7 +345,9 @@ header {
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   .content {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .avatar-profile {
+    display: none; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -354,4 +358,6 @@ header {
       margin-top: 1rem;
       font-size: 5rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .avatar-profile {
+    display: none; } }
