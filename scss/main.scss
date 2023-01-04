@@ -186,11 +186,12 @@ header {
     }
 
     .item-four-div {
-        background: linear-gradient(to right, #C1E1C1, #A7C7E7);
+        background: linear-gradient(to right, #A7C7E7, #C1E1C1);
     }
 
     .item-five-div {
-        background: linear-gradient(to right, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+        background: linear-gradient(to right, rgb(27, 26, 26), rgb(144, 144, 144));
+        // background: linear-gradient(to right, #fc9308, #f7cc95);
     }
 }
 

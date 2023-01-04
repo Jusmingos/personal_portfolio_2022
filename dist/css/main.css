@@ -203,9 +203,9 @@ header {
   .projects .item-three-div {
     background: linear-gradient(to right, #543ab7 0%, #00acc1 100%); }
   .projects .item-four-div {
-    background: linear-gradient(to right, #C1E1C1, #A7C7E7); }
+    background: linear-gradient(to right, #A7C7E7, #C1E1C1); }
   .projects .item-five-div {
-    background: linear-gradient(to right, #543ab7 0%, #00acc1 100%); }
+    background: linear-gradient(to right, #1b1a1a, #909090); }
 
 .boxes {
   display: flex;
