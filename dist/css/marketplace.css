@@ -1,0 +1,511 @@
+@import url('https://fonts.cdnfonts.com/css/varela-round-2');
+@import url('https://fonts.cdnfonts.com/css/almost-like-the-blues');
+
+* {
+  color: #4a4e53;
+}
+body {
+    font-family: "Figtree", sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+/* CITATION: https://codepen.io/goodkatz/pen/LYPGxQz?editors=1100 */
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(to right, rgb(10, 10, 10) 0%, rgb(98, 97, 97) 100%);
+  color:white;
+}
+
+.logo {
+  width:50px;
+  fill:white;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  height:80vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.start {
+  line-height: 0;
+  padding: 20px 45px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.5s;
+  color: rgb(90, 40, 176);
+  background: #fff;
+  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+}
+
+.start i {
+  margin-left: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.start:hover {
+  color: rgb(90, 40, 176);
+}
+
+.start:hover i {
+  color: rgb(90, 40, 176);
+  transform: translateX(5px);
+}
+  
+.section {
+    padding: 2rem 0 7rem;
+}
+
+.subheader {
+    font-weight: 600;
+    color: #4154f1;
+}
+
+.custom-navbar {
+    background: #6025bf;
+}
+
+.custom-footer {
+  /* color: #e7e1fb; */
+  padding: 2rem 0;
+}
+
+
+.jumbo-bg {
+    background-color: #020c63;
+}
+
+button {
+    background-color: #020c63;
+    color: #fff;
+    /* make a glow effect */
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dark-bg {
+    /* background-color: #f6f9fe; */
+}
+
+.website-container {
+  /* height: 100%; */
+  width: 80%;
+}
+
+#float {
+  line-height: 0;
+  padding: 15px 25px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  background: rgb(90, 40, 176);
+  /* float bottom left */
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1rem;
+}
+
+#float i {
+  margin-right: 7px;
+  font-size: 15px;
+}
+
+#float:hover {
+  color: white;
+  transform: scale(1.025);
+  transition: 0.75s;
+}
+
+/* on hover make expand */
+.site:hover {
+    /* on hover make expand */
+    -webkit-transform: rotateZ(-2deg);
+    -ms-transform: rotateZ(-2deg);
+    transform: rotateZ(-2deg);
+    transition: 1s ease;
+}
+
+/* make Y Combinator orange, bold, and underline */
+.topic {
+    color: #020c63;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.onwards {
+    line-height: 0;
+    padding: 20px 45px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: 0.5s;
+    color: #fff;
+    background: #4154f1;
+    box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+}
+
+.onwards i {
+    margin-left: 10px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.onwards:hover {
+    color: white;
+}
+
+.onwards:hover i {
+    color: white;
+    transform: translateX(5px);
+}
+
+/* CITATION: https://codepen.io/Itchiii/pen/Ldaoaz */
+.path {
+    stroke-dasharray: 572;
+    stroke-dashoffset: 572;
+    animation: pathAnimation 1.2s linear 0.001s forwards;
+    visibility: hidden;
+} 
+
+.path2 { 
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+    animation: pathAnimation2 1.5s linear 1.2s forwards; 
+    visibility: hidden;
+}
+
+.eye {
+    stroke-dasharray: 68;
+    stroke-dashoffset: 68;
+    animation: eyeAnimation .5s linear 2.72s forwards;
+    visibility: hidden;
+}
+
+@keyframes pathAnimation { 
+    from {visibility: hidden; stroke-dashoffset: 572;}
+    to { visibility: visible; stroke-dashoffset: 0; }
+}
+
+@keyframes pathAnimation2 {  
+    from {visibility: hidden;stroke-dashoffset: 800; }
+    to { visibility: visible; stroke-dashoffset: 0; }
+}
+
+@keyframes eyeAnimation {  
+    from { visibility: hidden;stroke-dashoffset: 68;}
+    to {visibility: visible; stroke-dashoffset: 0;}
+}
+  
+
+/* boba css */
+ 
+:root {
+    /* background-color: #f5ecf8; */
+  }
+  
+  #bubbletea {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+  }
+  
+  #cheeks {
+    -webkit-animation: blush 4s infinite;
+    animation: blush 4s infinite;
+  }
+  
+  @-webkit-keyframes blush {
+    50% {
+      stroke: #b7094c;
+    }
+  }
+  
+  @keyframes blush {
+    50% {
+      stroke: #b7094c;
+    }
+  }
+  
+  #boba-two {
+    -webkit-animation: jiggle 5s infinite;
+    animation: jiggle 5s infinite;
+  }
+  #boba-three {
+    -webkit-animation: jiggle 3s infinite;
+    animation: jiggle 3s infinite;
+  }
+  #boba-four {
+    -webkit-animation: jiggle 4s infinite;
+    animation: jiggle 4s infinite;
+  }
+  
+  #boba-five {
+    -webkit-animation: jiggle 2s infinite;
+    animation: jiggle 2s infinite;
+  }
+  
+  #boba-six {
+    -webkit-animation: jiggle 6s infinite;
+    animation: jiggle 6s infinite;
+  }
+  
+  @-webkit-keyframes jiggle {
+    25% {
+      -webkit-transform: translateY(3px);
+      transform: translateY(3px);
+    }
+    50% {
+      -webkit-transform: translateY(6px) scale(0.98);
+      transform: translateY(6px) scale(0.98);
+    }
+  
+    100% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+  }
+  
+  @keyframes jiggle {
+    25% {
+      -webkit-transform: translateY(3px);
+      transform: translateY(3px);
+    }
+    50% {
+      -webkit-transform: translateY(6px) scale(0.98);
+      transform: translateY(6px) scale(0.98);
+    }
+  
+    100% {
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);
+    }
+  }
+
+/* TEDDY BEAR CSS: https://codepen.io/ryan-joesph-dev/pen/rNVBLBq */
+  
+  .bear-container {
+    position: relative;
+    margin: auto;
+    display: block;
+    margin-top: 5%;
+    width: 300px;
+    height: 300px;
+    background: #DDE8F9;
+    border-radius: 100%;
+    overflow: hidden;
+    border: #383838 solid 10px;
+  }
+  .bear-container .bear {
+    border: #383838 solid 10px;
+    background: #775D46;
+    width: 176px;
+    height: 300px;
+    z-index: 10;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-radius: 110px;
+  }
+  .bear-container .left-ear {
+    border: #383838 solid 10px;
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background-color: #C5B697;
+    border-radius: 100%;
+    top: 58px;
+    left: 50px;
+  }
+  .bear-container .right-ear {
+    border: #383838 solid 10px;
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    background-color: #C5B697;
+    border-radius: 100%;
+    top: 58px;
+    right: 50px;
+    animation: ear_wiggle 2s ease-in-out;
+    animation-iteration-count: infinite;
+  }
+  .bear-container .left-eye {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: #383838;
+    border-radius: 100%;
+    top: 135px;
+    left: 96px;
+    z-index: 10;
+  }
+  .bear-container .right-eye {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: #383838;
+    border-radius: 100%;
+    top: 135px;
+    right: 96px;
+    z-index: 10;
+    animation: wink 2s ease-in-out forwards;
+    animation-iteration-count: infinite;
+  }
+  .bear-container .nose {
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    background-color: #C5B697;
+    border-radius: 100%;
+    top: 150px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    z-index: 10;
+  }
+  .bear-container .nose::before {
+    content: "";
+    background-color: #383838;
+    width: 36px;
+    height: 30px;
+    display: block;
+    border-radius: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 8px;
+  }
+  .bear-container .mouth {
+    width: 55px;
+    height: 15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 10px solid #383838;
+    border-top: 0;
+    position: absolute;
+    top: 192px;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .bear-container .mouth::before {
+    content: "";
+    width: 10px;
+    height: 22px;
+    background-color: #383838;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: -10px;
+  }
+  .bear-container .hand {
+    border: #383838 solid 10px;
+    z-index: 120;
+    background: #775D46;
+    background-image: radial-gradient(circle at 10px 25px, #C5B697 4px, transparent 4px), radial-gradient(circle at 20px 18px, #C5B697 4px, transparent 4px), radial-gradient(circle at 32px 18px, #C5B697 4px, transparent 4px), radial-gradient(circle at 42px 25px, #C5B697 4px, transparent 4px), radial-gradient(circle at 26px 40px, #C5B697 12px, transparent 12px);
+    width: 51px;
+    height: 150px;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    border-radius: 100px;
+    animation: wave 0.7s ease-in-out forwards;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes wave {
+    0% {
+      top: 170px;
+    }
+    35% {
+      top: 150px;
+    }
+    100% {
+      top: 170px;
+    }
+  }
+  @keyframes wink {
+    0% {
+      height: 22px;
+    }
+    10% {
+      margin-top: 8px;
+      height: 6px;
+    }
+    30% {
+      margin-top: 0px;
+      height: 22px;
+    }
+    100% {
+      height: 22px;
+    }
+  }
+  @keyframes ear_wiggle {
+    0% {
+      top: 58px;
+      right: 50px;
+    }
+    10% {
+      top: 63px;
+      right: 45px;
+    }
+    20% {
+      top: 58px;
+      right: 50px;
+    }
+    30% {
+      top: 63px;
+      right: 45px;
+    }
+    50% {
+      top: 58px;
+      right: 50px;
+    }
+  }
+
+/* CITATION: Gradient Scrollbar https://h.dhairyashah.dev/how-to-make-a-beautiful-gradient-scroll-bar-with-css
+  /* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #5A5A5A;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#E0B0FF, #fab8d4, #AEC6CF);
+}
+/* disable background on horiztonal scroll */
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
