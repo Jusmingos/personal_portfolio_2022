@@ -18,7 +18,7 @@ h3 {
 .header {
   position:relative;
   text-align:center;
-  background: linear-gradient(to right, rgb(10, 10, 10) 0%, rgb(98, 97, 97) 100%);
+  background: linear-gradient(to right, rgb(10, 10, 10) 30%, rgb(72, 71, 71) 100%);
   color:white;
 }
 
@@ -85,6 +85,7 @@ h3 {
 
 .custom-footer {
   /* color: #e7e1fb; */
+  background-color: rgb(90, 40, 176);
   padding: 2rem 0;
 }
 
@@ -315,7 +316,7 @@ button {
     background: #DDE8F9;
     border-radius: 100%;
     overflow: hidden;
-    border: #393838 solid 10px;
+    border: #7d7b7b solid 10px;
   }
   .bear-container .bear {
     border: #383838 solid 10px;
@@ -499,11 +500,11 @@ button {
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #5A5A5A;
+  /* background: #5A5A5A; */
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(#E0B0FF, #fab8d4, #AEC6CF);
+  background: linear-gradient(rgb(72, 71, 71), rgb(134, 133, 133), rgb(201, 199, 199));
 }
 /* disable background on horiztonal scroll */
 ::-webkit-scrollbar-track-piece {
