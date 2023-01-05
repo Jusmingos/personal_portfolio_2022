@@ -315,11 +315,11 @@ button {
     background: #DDE8F9;
     border-radius: 100%;
     overflow: hidden;
-    border: #383838 solid 10px;
+    border: #393838 solid 10px;
   }
   .bear-container .bear {
     border: #383838 solid 10px;
-    background: #775D46;
+    background: #b97d48;
     width: 176px;
     height: 300px;
     z-index: 10;
@@ -430,7 +430,7 @@ button {
   .bear-container .hand {
     border: #383838 solid 10px;
     z-index: 120;
-    background: #775D46;
+    background: #b97d48;
     background-image: radial-gradient(circle at 10px 25px, #C5B697 4px, transparent 4px), radial-gradient(circle at 20px 18px, #C5B697 4px, transparent 4px), radial-gradient(circle at 32px 18px, #C5B697 4px, transparent 4px), radial-gradient(circle at 42px 25px, #C5B697 4px, transparent 4px), radial-gradient(circle at 26px 40px, #C5B697 12px, transparent 12px);
     width: 51px;
     height: 150px;
