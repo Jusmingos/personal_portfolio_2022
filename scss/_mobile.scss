@@ -83,6 +83,10 @@
     .avatar-profile {
         display: none;
     }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 // Smartphones
