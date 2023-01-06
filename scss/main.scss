@@ -438,6 +438,12 @@ header {
     }
 }
 
+.project-img {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 // MODAL CSS: https://www.w3schools.com/howto/howto_css_modals.asp
 /* The Modal (background) */
 .modal {
