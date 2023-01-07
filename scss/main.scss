@@ -473,6 +473,11 @@ header {
         // overflow-clip-margin: content-box;
         // overflow: clip;
     }
+
+    h3 {
+        font-weight: bolder;
+        color: darken(#4a4e53, 20);
+    }
   }
   
   /* The Close Button */
@@ -504,5 +509,6 @@ header {
         cursor: pointer;
     }
   }
+
 
 @import 'mobile'; // put media query at the bottom so that it runs after css
