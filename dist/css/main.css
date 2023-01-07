@@ -467,7 +467,9 @@ header {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 14px; }
+  font-size: 14px;
+  font-family: "Figtree", sans-serif;
+  letter-spacing: 0.5px; }
   .detail-btn:hover {
     cursor: pointer; }
 
