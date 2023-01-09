@@ -140,6 +140,12 @@ header {
         font-weight: bolder;
         color: $secondary-color;
     }
+
+    .brown-link {
+        &:hover {
+            color: $secondary-color;
+        }
+    }
 }
 
 // Work/Projects
