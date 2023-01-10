@@ -522,7 +522,11 @@ header {
   .avatar-profile {
     display: none; }
   .skills-container {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .timeline h2 {
+    font-size: 20px; }
+  .timeline h4 {
+    font-size: 18px; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -554,4 +558,10 @@ header {
     left: 15px; }
   /* Make all right containers behave like the left ones */
   .right {
-    left: 0%; } }
+    left: 0%; }
+  .timeline h2 {
+    font-size: 15px; }
+  .timeline h4 {
+    font-size: 14px; }
+  .timeline p {
+    font-size: 12px; } }

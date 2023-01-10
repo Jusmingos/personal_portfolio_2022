@@ -87,6 +87,15 @@
     .skills-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .timeline {
+        h2 {
+            font-size: 20px;
+        }
+        h4 {
+            font-size: 18px;
+        }
+    }
 }
 
 // Smartphones
@@ -139,4 +148,17 @@
       .right {
         left: 0%;
       }
+
+      .timeline {
+        h2 {
+            font-size: 15px;
+        }
+        h4 {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
 }
